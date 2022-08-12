@@ -1,0 +1,122 @@
+:root {
+    --darkTurquoise: rgb(36, 147, 147);
+    --darkerTurquoise: rgb(27, 117, 117);
+    --turquoise: darkTurquoise;
+}
+
+/*HEADER*/
+
+.headerContainer {
+    height: 4rem;
+    background-color: var(--darkTurquoise);
+}
+
+.btn-turquoise {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+}
+
+.btn-turquoise:hover {
+    border-color: var(--turquoise);
+    background-color: var(--darkerTurquoise);
+}
+
+/*MAIN*/
+
+.mainContainer {
+    height: calc(100vh - 7rem);
+    overflow-y: auto;
+    padding: 1rem 6rem 2rem 6rem;
+}
+
+.mainContainer > div:first-child {
+    width: 90%;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+   }
+
+.mainContainer > div:nth-child(2) > div:first-child {
+    border-bottom: .5px grey solid;
+    padding-bottom: .5rem;
+}
+
+.mainContainer > div:nth-child(2) thead tr{
+    background-color: rgba(8, 88, 88, 0.726);
+}
+
+.mainContainer > div:nth-child(2) tbody tr:nth-child(2n - 1){
+    background-color: rgb(22, 192, 192, 0.467);
+}
+
+.mainContainer > div:nth-child(2) tbody tr:nth-child(2n) {
+    background-color: rgb(21, 139, 139, 0.626);
+}
+
+.mainContainer > div:nth-child(2) table td, 
+.mainContainer > div:nth-child(2) table th {
+    color: rgb(253, 250, 250);
+    font-weight: bold;
+}
+
+.mainContainer > div:nth-child(2) table {
+    vertical-align: middle;
+}
+
+.imagenesBanner {
+    height: 30rem;
+    background: no-repeat center center/cover;
+}
+
+.btn-red {
+    background-color: #cb4848;
+    color: white;
+    margin-left: .5rem;
+}
+
+.btn-red:hover {
+    background-color: #9e3030;
+}
+
+
+
+.botonEliminar {
+    display: flex;
+    align-items: center;
+}
+
+.botonEliminar > button > svg {
+    margin-right: 0.5rem;
+    position: relative;
+    top: -1.5px;
+}
+
+
+/*MODAL EDITAR*/
+
+.btn-modalEditar {
+    background-color: var(--darkTurquoise);
+    color: white;
+}
+
+.btn-modalEditar:hover {
+    background-color: var(--darkerTurquoise);
+}
+
+/*MODAL CONTACTO*/
+
+.btn-contacato {
+   background-color: rgba(8, 88, 88, 0.726);
+   color: white;
+}
+
+
+/*FOOTER*/
+
+.footerContainer {
+    height: 3rem;
+    background-color: var(--darkerTurquoise);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
